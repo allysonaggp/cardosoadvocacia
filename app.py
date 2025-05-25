@@ -42,6 +42,8 @@ def contato():
                 smtp.login(EMAIL_REMETENTE, SENHA_APP)
                 smtp.send_message(msg)
                 print("Mensagem enviada com sucesso!")
+             
+             
         except Exception as e:
             print(f"[ERRO NO ENVIO] {e}")
             return f"Erro ao enviar mensagem: {e}"
